@@ -25,8 +25,12 @@
 <link rel="icon" href="画像URL" sizes="48x48" type="image/png">
 <link rel="icon" href="画像URL" sizes="62x62" type="image/png">
 <link rel="apple-touch-icon-precomposed" href="画像のURL">
+<!-- webフォント設定 -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 <!-- スタイルシート設定 -->
 <link rel="stylesheet" href="../common/css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
 <!-- js設定 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type='text/javascript' src='ファイルのURL' defer></script>
@@ -40,100 +44,86 @@
     <header class="header">
         <!-- /.gnav -->
         <nav class="gnav">
-
-            <ul>
+            <ul class="navimenu">
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25.32" height="23.609" viewBox="0 0 25.32 23.609">
-                    <path id="パス_30" data-name="パス 30" d="M12.662,7.375,0,16.061V30.984H9.97V23.01h5.38v7.974h9.97V16.061Z" transform="translate(0 -7.375)" fill="#fff"/>
-                    </svg>
-                    <p>TOP</p>
+                    <a href="index.html">
+                        <img src="images/img_home.png" alt="">
+                        <p>TOP</p>
+                    </a>
                 </li>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25.32" height="23.609" viewBox="0 0 25.32 23.609">
-                    <path id="パス_30" data-name="パス 30" d="M12.662,7.375,0,16.061V30.984H9.97V23.01h5.38v7.974h9.97V16.061Z" transform="translate(0 -7.375)" fill="#fff"/>
-                    </svg>
-                    <p>WORKS</p>
+                    <a href="works.html">
+                        <img src="images/img_home.png" alt="">
+                        <p>WORK</p>
+                    </a>
                 </li>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25.32" height="23.609" viewBox="0 0 25.32 23.609">
-                    <path id="パス_30" data-name="パス 30" d="M12.662,7.375,0,16.061V30.984H9.97V23.01h5.38v7.974h9.97V16.061Z" transform="translate(0 -7.375)" fill="#fff"/>
-                    </svg>
-                    <p>PROFILE</p>
+                    <a href="profile.html">
+                        <img src="images/img_home.png" alt="">
+                        <p>PROFILE</p>
+                    </a>
                 </li>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25.32" height="23.609" viewBox="0 0 25.32 23.609">
-                    <path id="パス_30" data-name="パス 30" d="M12.662,7.375,0,16.061V30.984H9.97V23.01h5.38v7.974h9.97V16.061Z" transform="translate(0 -7.375)" fill="#fff"/>
-                    </svg>
-                    <p>MIND SET</p>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25.32" height="23.609" viewBox="0 0 25.32 23.609">
-                    <path id="パス_30" data-name="パス 30" d="M12.662,7.375,0,16.061V30.984H9.97V23.01h5.38v7.974h9.97V16.061Z" transform="translate(0 -7.375)" fill="#fff"/>
-                    </svg>
-                    <p>SNS</p>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25.32" height="23.609" viewBox="0 0 25.32 23.609">
-                    <path id="パス_30" data-name="パス 30" d="M12.662,7.375,0,16.061V30.984H9.97V23.01h5.38v7.974h9.97V16.061Z" transform="translate(0 -7.375)" fill="#fff"/>
-                    </svg>
-                    <p>CONTACT</p>
+                    <a href="contact.html">
+                        <img src="images/img_home.png" alt="">
+                        <p>CONTACT</p>
+                    </a>
                 </li>
             </ul>
-
-            <button>close</button>
         </nav>
     </header>
 
     <!-- /.main -->
     <main>
         <div class="container_title">
-            <h1>デザインの力で人々の生活を豊かに</h1>
+            <h1>デザインの力で<br>人々の生活を豊かに</h1>
         </div>
         <!-- WOEKS -->
-        <div class="container_works">
+        <section class="container_works">
             <div class="wrapper_works">
                 <h2>WORKS</h2>
                 <ul>
                     <li>
-                        <img src="" alt="">
+                        <img src="images/img_works.png" alt="">
                         <dl>
                             <dt>WEBサイト</dt>
                             <dd>株式会社あいうえおコーポレートサイト</dd>
                         </dl>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img src="images/img_works.png" alt="">
                         <dl>
                             <dt>WEBサイト</dt>
                             <dd>株式会社あいうえおコーポレートサイト</dd>
                         </dl>
                     </li>
                     <li>
-                        <img src="" alt="">
+                        <img src="images/img_works.png" alt="">
                         <dl>
                             <dt>WEBサイト</dt>
                             <dd>株式会社あいうえおコーポレートサイト</dd>
                         </dl>
                     </li>
                 </ul>
-                <a href="#">MORE</a>
+                <a href="#" class="btn_more">MORE</a>
             </div>
-        </div>
+        </section>
 
         <!-- PROFILE -->
-        <div class="container_profile">
+        <section class="container_profile">
             <div class="wrapper_profile">
+                <h2>PROFILE</h2>
                 <div class="box_profile">
-                    <img src="" alt="">
+                    <img src="images/img_profile_round.png" alt="">
                     <dl>
-                        <dt>森　雄太<br>Yuta Mori</dt>
+                        <dt><span>森　雄太</span><br>Yuta Mori</dt>
                         <dd>1990年3月生まれ。<br>2児の父。</dd>
                         <dd>小学校時代にいじめに遭うも、自分の描いたイラストで周りに喜んでもらえ、「こんな自分にも喜んでもらえることがあるんだ」というデザイン＝他者貢献のルーツとなる。</dd>
                     </dl>
                 </div>
-                <a href="#">MORE</a>
+                <a href="#" class="btn_more">MORE</a>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- /.footer -->

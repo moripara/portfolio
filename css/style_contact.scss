@@ -1,0 +1,47 @@
+main{
+    height: 100vh;
+}
+
+.wrapper_contact{
+    padding: 30% 0 28% 0;
+    text-align: center;
+    img{
+        width: 18%;
+        max-width: 80px;
+        margin: 0 auto 6%;
+    }
+    p{
+        font-size: 4.4vw;
+        margin: 0 0 2% 0;
+    }
+}
+
+
+.container_sns{
+    margin: 0 0 30% 0;
+    .wrapper_sns{
+        .box_sns{
+            h3{
+                margin: 0 0 8% 0;
+                text-align: center;
+            }
+            ul{
+                width: 70%;
+                margin: 0 auto 14%;
+                display: flex;
+                justify-content: space-between;
+                li > img{
+                    width: 100%;
+                    max-width: 30px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}

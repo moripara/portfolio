@@ -1,0 +1,115 @@
+.wrapper_profile {
+  padding: 30% 0 20% 0;
+}
+
+.wrapper_profile div > img {
+  width: 40%;
+  margin: 0 auto 6%;
+  max-width: 220px;
+}
+
+.wrapper_profile .box_profile h3 {
+  margin: 0 0 8% 0;
+  text-align: center;
+}
+
+.wrapper_profile .box_profile ul {
+  width: 70%;
+  margin: 0 auto 14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper_profile .box_profile ul li > img {
+  width: 100%;
+  max-width: 30px;
+}
+
+.wrapper_profile .box_profile .box_profile_text {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 4.2vw;
+  line-height: 1.4;
+}
+
+.wrapper_profile .box_profile .box_profile_text p {
+  padding: 0 0 8% 0;
+}
+
+.container_mindeset {
+  background-color: #F7F7F7;
+}
+
+.container_mindeset .wrapper_mindeset {
+  padding: 22% 0 2% 0;
+  text-align: center;
+}
+
+.container_mindeset .wrapper_mindeset .box_mideset {
+  width: 80%;
+  margin: 0 auto;
+  padding: 16% 0 0 0;
+}
+
+.container_mindeset .wrapper_mindeset .box_mideset ul {
+  margin: 0 0 10% 0;
+}
+
+.container_mindeset .wrapper_mindeset .box_mideset ul li {
+  padding: 0 0 16% 0;
+}
+
+.container_mindeset .wrapper_mindeset .box_mideset ul li img {
+  margin: 0 auto 4%;
+  width: 14%;
+}
+
+.container_mindeset .wrapper_mindeset .box_mideset ul li h4 {
+  margin: 0 0 6% 0;
+  font-size: 4.6vw;
+}
+
+.container_mindeset .wrapper_mindeset .box_mideset ul li p {
+  font-size: 4vw;
+  line-height: 1.4;
+  padding: 0 0 4% 0;
+}
+
+.container_skil .wrapper_skil {
+  padding: 22% 0 2% 0;
+  text-align: center;
+}
+
+.container_skil .wrapper_skil h2 {
+  text-align: center;
+  font-size: 7.4vw;
+  margin: 0 0 10% 0;
+}
+
+.container_skil .wrapper_skil .box_skil ul {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container_skil .wrapper_skil .box_skil ul li {
+  width: calc(100% / 3);
+  margin: 0 0 12% 0;
+}
+
+.container_skil .wrapper_skil .box_skil ul li img {
+  width: 58%;
+  margin: 0 auto 10%;
+}
+/*# sourceMappingURL=style_profile.css.map */

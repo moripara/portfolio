@@ -1,0 +1,92 @@
+.container_title {
+  background: linear-gradient(25deg, rgba(60, 77, 44, 0.4), rgba(169, 217, 124, 0.4)), url(https://polm.work/portfolio/images/plans-1867745_1920.jpg);
+  height: calc(100vh - 98px);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 0 18% 0;
+}
+
+.container_title h1 {
+  position: absolute;
+  top: 70%;
+  font-size: 9vw;
+  color: #FFF;
+}
+
+.btn_more {
+  display: block;
+  width: 50%;
+  text-align: center;
+  background: #8BB366;
+  margin: 0 auto;
+  padding: 2% 0;
+  border-radius: 5px;
+  color: #FFF;
+  letter-spacing: 2px;
+  font-size: 3.8vw;
+}
+
+.container_profile {
+  background-color: #F7F7F7;
+}
+
+.container_profile .wrapper_profile {
+  padding: 14% 0 16% 0;
+}
+
+.container_profile .wrapper_profile .box_profile {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container_profile .wrapper_profile .box_profile img {
+  width: 40%;
+  margin: 0 auto 6%;
+  max-width: 220px;
+}
+
+.container_profile .wrapper_profile .box_profile dl {
+  margin: 0 0 10% 0;
+}
+
+.container_profile .wrapper_profile .box_profile dl dt {
+  text-align: center;
+  padding: 0 0 16% 0;
+}
+
+.container_profile .wrapper_profile .box_profile dl dt span {
+  font-size: 4.6vw;
+}
+
+.container_profile .wrapper_profile .box_profile dl dd {
+  padding: 0 0 8% 0;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .container_title {
+    background: linear-gradient(25deg, rgba(38, 45, 30, 0.64), rgba(68, 105, 34, 0.55)), url(https://polm.work/portfolio/images/plans-1867745_1920.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .container_title h1 {
+    font-size: 5vw;
+    text-align: center;
+    position: relative;
+    top: 55%;
+  }
+  .wrapper_works ul li {
+    margin: 0 auto 16%;
+    width: 74%;
+    max-width: 500px;
+  }
+  .wrapper_works ul li img {
+    margin: 0 auto 10%;
+    width: 100%;
+  }
+  .wrapper_works ul li dl {
+    font-size: 2.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

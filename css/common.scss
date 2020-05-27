@@ -1,0 +1,125 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%
+}
+
+body{
+    line-height: 1.2;
+    font-family: -apple-system,'Lato', sans-serif, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+}
+
+.pc{
+    display: none;
+}
+
+.sp{
+    display: block;
+}
+
+header{
+    background-color: #000000cf;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 56px;
+    bottom: 0;
+    .gnav{
+        width: 94%;
+        margin: 0 auto;
+    }
+}
+
+.navimenu{
+    display: flex;
+    padding: 3% 0 0 0;
+        li{
+            color: #FFF;
+            text-align: center;
+            width: 25%;
+            font-size: 3vw;
+            a{
+                color: #FFF;
+                img{
+                    margin: 0 auto 4%;
+                }
+            }
+        }
+    }
+
+h2{
+    text-align: center;
+    font-size: 7.4vw;
+    margin: 0 0 10% 0;
+    color: #3C4D2C;
+}
+
+.wrapper_works{
+    padding: 0 0 20% 0;
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 74%;
+        margin: 0 auto;
+        li{
+            margin: 0 0 16% 0;
+            img{
+                margin: 0 0 6% 0;
+            }
+            dl{
+                font-size: 4.2vw;
+                dt{
+                    margin: 0 0 3% 0;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    color: #353535;
+    padding: 7% 0;
+    height: 20vh;
+    font-size: 4vw;
+}
+
+@media (min-width: 768px) {
+    .pc{
+        display: block;
+    }
+
+    .sp{
+        display: none;
+    }
+
+    header{
+        background-color: unset;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        height: auto;
+        top: 70%;
+        bottom: unset;
+    }
+
+    .navimenu{
+            li{
+                font-size: 2.6vw;
+                a{
+                    img{
+                    }
+                }
+            }
+        }
+
+}
+
+h2{
+    font-size: 5.6vw;
+    margin: 0 0 10% 0;
+}
+
+
+@media (min-width: 1024px) {
+
+}

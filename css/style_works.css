@@ -1,0 +1,23 @@
+.wrapper_works {
+  padding: 30% 0 20% 0;
+}
+
+.wrapper_works .box_category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  text-align: center;
+  margin: 0 auto 20%;
+}
+
+.wrapper_works .box_category li {
+  width: 50%;
+  margin: 0 0 6% 0;
+}
+/*# sourceMappingURL=style_works.css.map */
