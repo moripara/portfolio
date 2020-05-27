@@ -64,6 +64,7 @@ h2{
             margin: 0 0 16% 0;
             img{
                 margin: 0 0 6% 0;
+                width: 100%;
             }
             dl{
                 font-size: 4.2vw;
@@ -93,13 +94,7 @@ footer{
     }
 
     header{
-        background-color: unset;
-        position: absolute;
-        z-index: 1000;
-        width: 100%;
-        height: auto;
-        top: 70%;
-        bottom: unset;
+        height: 100px;
     }
 
     .navimenu{

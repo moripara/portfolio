@@ -10,6 +10,7 @@
 .container_title h1 {
   position: absolute;
   top: 70%;
+  left: 4%;
   font-size: 9vw;
   color: #FFF;
 }
@@ -36,7 +37,7 @@
 }
 
 .container_profile .wrapper_profile .box_profile {
-  width: 80%;
+  width: 76%;
   margin: 0 auto;
 }
 
@@ -48,6 +49,7 @@
 
 .container_profile .wrapper_profile .box_profile dl {
   margin: 0 0 10% 0;
+  font-size: 4vw;
 }
 
 .container_profile .wrapper_profile .box_profile dl dt {
@@ -87,6 +89,12 @@
   }
   .wrapper_works ul li dl {
     font-size: 2.6rem;
+  }
+  .container_profile .wrapper_profile .box_profile {
+    width: 60%;
+  }
+  .container_profile .wrapper_profile .box_profile dl {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

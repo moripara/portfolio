@@ -81,6 +81,7 @@ h2 {
 
 .wrapper_works ul li img {
   margin: 0 0 6% 0;
+  width: 100%;
 }
 
 .wrapper_works ul li dl {
@@ -107,13 +108,7 @@ footer {
     display: none;
   }
   header {
-    background-color: unset;
-    position: absolute;
-    z-index: 1000;
-    width: 100%;
-    height: auto;
-    top: 70%;
-    bottom: unset;
+    height: 100px;
   }
   .navimenu li {
     font-size: 2.6vw;

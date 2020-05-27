@@ -17,6 +17,27 @@
 
 @media (min-width: 768px) {
 
+    .wrapper_works{
+        ul{
+            flex-direction: unset;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            li{
+                width: 46%;
+                img{
+                }
+                dl{
+                    font-size: 2rem;
+                    dt{
+                    }
+                }
+            }
+        }
+    }
+
+
+
 }
 
 @media (min-width: 1024px) {

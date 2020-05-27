@@ -99,6 +99,58 @@
 }
 @media (min-width: 768px) {
 
+    .wrapper_profile{
+        div > img{
+        }
+        .box_profile{
+            h3{
+                margin: 0 0 4% 0;
+                font-size: 2.6rem;
+                line-height: 1.4;
+            }
+            ul{
+                width: 46%;
+                margin: 0 auto 10%;
+                li > img{
+                    max-width: 40px;
+                }
+            }
+            .box_profile_text{
+                width: 70%;
+                font-size: 2.2rem;
+                p{
+                }
+            }
+        }
+    }
+
+    .container_mindeset{
+        .wrapper_mindeset{
+            h3{
+                font-size: 2.6rem;
+                margin: 0 0 4% 0;
+            }
+            p{
+                font-size: 2.2rem;
+            }
+            .box_mideset{
+                ul{
+                    li{
+                        img{
+                        }
+                        h4{
+                            font-size: 2.8rem;
+                        }
+                        p{
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 }
 
 @media (min-width: 1024px) {

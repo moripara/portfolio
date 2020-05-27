@@ -9,6 +9,7 @@
     h1{
         position: absolute;
         top: 70%;
+        left: 4%;
         font-size: 9vw;
         color: #FFF;
     }
@@ -32,7 +33,7 @@
     .wrapper_profile{
         padding: 14% 0 16% 0;
         .box_profile{
-            width: 80%;
+            width: 76%;
             margin: 0 auto;
             img{
                 width: 40%;
@@ -41,6 +42,7 @@
             }
             dl{
                 margin: 0 0 10% 0;
+                font-size: 4vw;
                 dt{
                     text-align: center;
                     padding: 0 0 16% 0;
@@ -90,36 +92,24 @@
         }
     }
 
-    // .container_profile{
-    //     .wrapper_profile{
-    //         .box_profile{
-    //             display: flex;
-    //             justify-content: space-between;
-    //             img{
-    //                 width: 100%;
-    //                 max-width: 290px;
-    //                 height: 100%;
-    //                 margin: 0;
-    //             }
-    //             dl{
-    //                 text-align: left;
-    //                 font-size: 2.2rem;
-    //                 padding: 0 0 8% 0;
-    //                 width: 48%;
-    //                 dt{
-    //                     text-align: left;
-    //                     font-size: 2.8rem;
-    //                     span{
-    //                         font-size: unset;
-    //                     }
-    //                 }
-    //                 dd{
-    //                     font-size: 2rem;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+    .container_profile{
+        .wrapper_profile{
+            .box_profile{
+                width: 60%;
+                img{
+                }
+                dl{
+                    font-size: 2rem;
+                    dt{
+                        span{
+                        }
+                    }
+                    dd{
+                    }
+                }
+            }
+        }
+    }
 
 
 }

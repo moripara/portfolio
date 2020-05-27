@@ -112,4 +112,36 @@
   width: 58%;
   margin: 0 auto 10%;
 }
+
+@media (min-width: 768px) {
+  .wrapper_profile .box_profile h3 {
+    margin: 0 0 4% 0;
+    font-size: 2.6rem;
+    line-height: 1.4;
+  }
+  .wrapper_profile .box_profile ul {
+    width: 46%;
+    margin: 0 auto 10%;
+  }
+  .wrapper_profile .box_profile ul li > img {
+    max-width: 40px;
+  }
+  .wrapper_profile .box_profile .box_profile_text {
+    width: 70%;
+    font-size: 2.2rem;
+  }
+  .container_mindeset .wrapper_mindeset h3 {
+    font-size: 2.6rem;
+    margin: 0 0 4% 0;
+  }
+  .container_mindeset .wrapper_mindeset p {
+    font-size: 2.2rem;
+  }
+  .container_mindeset .wrapper_mindeset .box_mideset ul li h4 {
+    font-size: 2.8rem;
+  }
+  .container_mindeset .wrapper_mindeset .box_mideset ul li p {
+    font-size: 2.2rem;
+  }
+}
 /*# sourceMappingURL=style_profile.css.map */

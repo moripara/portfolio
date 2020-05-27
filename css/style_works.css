@@ -20,4 +20,25 @@
   width: 50%;
   margin: 0 0 6% 0;
 }
+
+@media (min-width: 768px) {
+  .wrapper_works ul {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+  .wrapper_works ul li {
+    width: 46%;
+  }
+  .wrapper_works ul li dl {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=style_works.css.map */

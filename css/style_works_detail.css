@@ -6,6 +6,7 @@
 
 .wrapper_works_detail img {
   margin: 0 0 10% 0;
+  width: 100%;
 }
 
 .wrapper_works_detail .box_works_detail {
@@ -32,5 +33,23 @@
 
 .wrapper_works_detail p {
   line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .wrapper_works_detail .box_works_detail {
+    font-size: 2.6rem;
+  }
+  .wrapper_works_detail .box_works_detail h3 {
+    margin: 0 0 1% 0;
+  }
+  .wrapper_works_detail .box_works_detail p {
+    font-size: 2.6rem;
+  }
+  .wrapper_works_detail dl {
+    font-size: 2rem;
+  }
+  .wrapper_works_detail p {
+    font-size: 1.8rem;
+  }
 }
 /*# sourceMappingURL=style_works_detail.css.map */
