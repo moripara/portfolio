@@ -1,5 +1,5 @@
 main {
-  height: 100vh;
+  height: 120vh;
 }
 
 .wrapper_contact {
@@ -41,5 +41,18 @@ main {
 .container_sns .wrapper_sns .box_sns ul li > img {
   width: 100%;
   max-width: 30px;
+}
+
+@media (min-width: 768px) {
+  .wrapper_contact img {
+    width: 30%;
+    max-width: 120px;
+  }
+  .container_sns .wrapper_sns .box_sns ul {
+    width: 66%;
+  }
+  .container_sns .wrapper_sns .box_sns ul li > img {
+    max-width: 54px;
+  }
 }
 /*# sourceMappingURL=style_contact.css.map */

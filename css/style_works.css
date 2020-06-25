@@ -41,4 +41,23 @@
     font-size: 2rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .wrapper_works {
+    padding: 170px 0 30px 0;
+  }
+  .wrapper_works ul {
+    width: 100%;
+    max-width: 980px;
+    padding: 0 0 20px 0;
+  }
+  .wrapper_works ul li {
+    width: calc(100% / 3);
+    max-width: 250px;
+    margin: 0 auto 60px;
+  }
+  .wrapper_works ul li dl {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=style_works.css.map */

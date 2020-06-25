@@ -11,6 +11,8 @@
         h3{
             margin: 0 0 8% 0;
             text-align: center;
+            font-size: 4vw;
+            line-height: 1.4;
         }
         ul{
             width: 70%;
@@ -40,7 +42,11 @@
         padding: 22% 0 2% 0;
         text-align: center;
         h3{
-
+            font-size: 4vw;
+            padding: 0 0 3% 0;
+        }
+        p{
+            font-size: 3.8vw;
         }
         .box_mideset{
             width: 80%;
@@ -75,7 +81,7 @@
         text-align: center;
         h2{
             text-align: center;
-            font-size: 7.4vw;
+            font-size: 5.6vw;
             margin: 0 0 10% 0;
         }
         .box_skil{
@@ -85,14 +91,17 @@
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
-            li{
-                width: calc(100% / 3);
-                margin: 0 0 12% 0;
-                img{
-                    width: 58%;
-                    margin: 0 auto 10%;
+                li{
+                    width: calc(100% / 3);
+                    margin: 0 0 12% 0;
+                    img{
+                        width: 58%;
+                        margin: 0 auto 10%;
+                        }
+                    p{
+                        font-size: 4vw;
+                    }
                 }
-            }
             }
         }
     }
@@ -128,21 +137,49 @@
         .wrapper_mindeset{
             h3{
                 font-size: 2.6rem;
-                margin: 0 0 4% 0;
+                margin: 0;
             }
             p{
-                font-size: 2.2rem;
+                font-size: 2.4rem;
             }
             .box_mideset{
+                width: 84%;
+                padding: 10% 0 0 0;
                 ul{
+                    display: flex;
+                    justify-content: space-between;
                     li{
+                        width: calc(100% / 3);
+                        padding: 0 2%;
                         img{
+                            width: 26%;
                         }
                         h4{
-                            font-size: 2.8rem;
+                            font-size: 2.6rem;
+                            margin: 8% 0 12% 0;
                         }
                         p{
-                            font-size: 2.2rem;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container_skil{
+        .wrapper_skil{
+            h2{
+            }
+            .box_skil{
+                ul{
+                    li{
+                        margin: 0 0 10% 0;
+                        img{
+                            width: 42%;
+                            }
+                        p{
+                            font-size: 2.6rem;
                         }
                     }
                 }
@@ -154,5 +191,90 @@
 }
 
 @media (min-width: 1024px) {
+    .wrapper_profile{
+        padding: 170px 0 30px 0;
+        div > img{
+        }
+        .box_profile{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 920px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                max-width: 300px;
+                margin: unset;
+                object-fit: contain;
+            }
+            h3{
+                text-align: left;
+                font-size: 16px;
+                margin: 0 0 14px 0;
+            }
+            ul{
+                margin: unset;
+                width: 34%;
+                padding: 0 0 50px 0;
+                li > img{
+                    max-width: 24px;
+                }
+            }
+            .box_profile_text{
+                width: 100%;
+                max-width: 540px;
+                padding: 0 0 0 0;
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .container_mindeset{
+        .wrapper_mindeset{
+            padding: 140px 0 10px 0;
+            h3{
+            }
+            p{
+            }
+            .box_mideset{
+                ul{
+                    li{
+                        img{
+                        }
+                        h4{
+                        }
+                        p{
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container_skil{
+        .wrapper_skil{
+            padding: 140px 0 10px 0;
+            h2{
+                font-size: 34px;
+            }
+            .box_skil{
+                ul{
+                    width: 72%;
+                    li{
+                        width: calc(100% / 4);
+                        img{
+                            width: 38%;
+                            }
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }

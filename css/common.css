@@ -79,7 +79,7 @@ h2 {
   margin: 0 0 16% 0;
 }
 
-.wrapper_works ul li img {
+.wrapper_works ul li a img {
   margin: 0 0 6% 0;
   width: 100%;
 }
@@ -113,10 +113,35 @@ footer {
   .navimenu li {
     font-size: 2.6vw;
   }
+  h2 {
+    font-size: 5.6vw;
+    margin: 0 0 10% 0;
+  }
 }
 
-h2 {
-  font-size: 5.6vw;
-  margin: 0 0 10% 0;
+@media (min-width: 1024px) {
+  header {
+    height: 60px;
+    top: 0;
+    bottom: unset;
+  }
+  header .gnav {
+    width: 60%;
+  }
+  .navimenu li {
+    font-size: 1.4rem;
+  }
+  .navimenu li a img {
+    display: none;
+  }
+  h2 {
+    font-size: 34px;
+    margin: 0 0 60px 0;
+  }
+  footer {
+    padding: 10px 0 20px 0;
+    height: auto;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=common.css.map */

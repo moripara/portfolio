@@ -77,10 +77,20 @@
     text-align: center;
     position: relative;
     top: 55%;
+    left: unset;
+  }
+  .wrapper_works ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 76%;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
   }
   .wrapper_works ul li {
     margin: 0 auto 16%;
-    width: 74%;
+    width: 44%;
     max-width: 500px;
   }
   .wrapper_works ul li img {
@@ -88,13 +98,83 @@
     width: 100%;
   }
   .wrapper_works ul li dl {
-    font-size: 2.6rem;
+    font-size: 2.0rem;
   }
   .container_profile .wrapper_profile .box_profile {
     width: 60%;
   }
   .container_profile .wrapper_profile .box_profile dl {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container_title {
+    margin: 0 0 150px 0;
+  }
+  .container_title h1 {
+    font-size: 40px;
+  }
+  .wrapper_works {
+    padding: 0 0 140px 0;
+  }
+  .wrapper_works ul {
+    width: 100%;
+    max-width: 980px;
+    padding: 0 0 20px 0;
+  }
+  .wrapper_works ul li {
+    width: calc(100% / 3);
+    max-width: 250px;
+    margin: 0 auto 60px;
+  }
+  .wrapper_works ul li dl {
+    font-size: 14px;
+  }
+  .btn_more {
+    width: 300px;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+  .container_profile .wrapper_profile {
+    padding: 140px 0 120px 0;
+  }
+  .container_profile .wrapper_profile .box_profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .container_profile .wrapper_profile .box_profile img {
+    width: 100%;
+    max-width: 300px;
+    margin: unset;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .container_profile .wrapper_profile .box_profile dl {
+    width: 100%;
+    max-width: 540px;
+    padding: 0 0 0 30px;
+  }
+  .container_profile .wrapper_profile .box_profile dl dt {
+    text-align: left;
+    font-size: 16px;
+    padding: 0 0 20px 0;
+  }
+  .container_profile .wrapper_profile .box_profile dl dt span {
+    font-size: 16px;
+  }
+  .container_profile .wrapper_profile .box_profile dl dd {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
