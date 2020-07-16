@@ -31,9 +31,9 @@
 <link rel="stylesheet" href="../common/css/reset.css">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.typekit.net/pmz1qwe.css">
 <!-- js設定 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type='text/javascript' src='ファイルのURL' defer></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
@@ -44,28 +44,29 @@
     <header class="header">
         <!-- /.gnav -->
         <nav class="gnav">
+            <img class="pc" src="images/img_rogo_side_white.png" alt="">
             <ul class="navimenu">
                 <li>
                     <a href="index.html">
-                        <img src="images/img_home.png" alt="">
+                        <img src="images/img_home.svg" alt="">
                         <p>TOP</p>
                     </a>
                 </li>
                 <li>
                     <a href="works.html">
-                        <img src="images/img_home.png" alt="">
+                        <img src="images/img_work.svg" alt="">
                         <p>WORK</p>
                     </a>
                 </li>
                 <li>
                     <a href="profile.html">
-                        <img src="images/img_home.png" alt="">
+                        <img src="images/img_profile.svg" alt="">
                         <p>PROFILE</p>
                     </a>
                 </li>
                 <li>
                     <a href="contact.html">
-                        <img src="images/img_home.png" alt="">
+                        <img src="images/img_contact.svg" alt="">
                         <p>CONTACT</p>
                     </a>
                 </li>
@@ -77,12 +78,13 @@
     <main>
         <div class="container_title">
             <h1>デザインの力で<br class="sp">人々の生活を豊かに</h1>
+            <img class="rogo_sp" src="images/img_rogo_white.png" alt="">
         </div>
         <!-- WOEKS -->
         <section class="container_works">
             <div class="wrapper_works">
                 <h2>WORKS</h2>
-                <ul>
+                <ul id="test">
                     <li>
                         <a href="works_detail.html">
                             <img src="images/img_works.png" alt="">
@@ -92,7 +94,7 @@
                             <dd>株式会社あいうえおコーポレートサイト</dd>
                         </dl>
                     </li>
-                    <li>
+                    <li class="fadeInUp">
                         <a href="works_detail.html">
                             <img src="images/img_works.png" alt="">
                         </a>
@@ -101,7 +103,7 @@
                             <dd>株式会社あいうえおコーポレートサイト</dd>
                         </dl>
                     </li>
-                    <li>
+                    <li class="fadeInUp">
                         <a href="works_detail.html">
                             <img src="images/img_works.png" alt="">
                         </a>
@@ -110,7 +112,7 @@
                             <dd>株式会社あいうえおコーポレートサイト</dd>
                         </dl>
                     </li>
-                    <li>
+                    <li class="fadeInUp">
                         <a href="works_detail.html">
                             <img src="images/img_works.png" alt="">
                         </a>
@@ -119,7 +121,7 @@
                             <dd>株式会社あいうえおコーポレートサイト</dd>
                         </dl>
                     </li>
-                    <li>
+                    <li class="fadeInUp">
                         <a href="works_detail.html">
                             <img src="images/img_works.png" alt="">
                         </a>
@@ -128,7 +130,7 @@
                             <dd>株式会社あいうえおコーポレートサイト</dd>
                         </dl>
                     </li>
-                    <li>
+                    <li class="fadeInUp">
                         <a href="works_detail.html">
                             <img src="images/img_works.png" alt="">
                         </a>
@@ -140,7 +142,9 @@
                 </ul>
                 <a href="#" class="btn_more">MORE</a>
             </div>
+
         </section>
+
 
         <!-- PROFILE -->
         <section class="container_profile">

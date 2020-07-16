@@ -1,5 +1,5 @@
 main{
-    height: 120vh;
+    height: auto;
 }
 
 .wrapper_contact{
@@ -11,7 +11,7 @@ main{
         margin: 0 auto 6%;
     }
     p{
-        font-size: 4.4vw;
+        font-size: 1.6rem;
         margin: 0 0 2% 0;
     }
 }
@@ -26,7 +26,7 @@ main{
                 text-align: center;
             }
             ul{
-                width: 70%;
+                width: 60%;
                 margin: 0 auto 14%;
                 display: flex;
                 justify-content: space-between;
@@ -40,6 +40,7 @@ main{
 }
 @media (min-width: 768px) {
     .wrapper_contact{
+        padding: 24% 0 20% 0;
         img{
             width: 30%;
             max-width: 120px;
@@ -65,5 +66,34 @@ main{
 }
 
 @media (min-width: 1024px) {
+    main{
+        height: auto;
+    }
+    .wrapper_contact{
+        padding: 170px 0 100px 0;
+        img{
+            max-width: 70px;
+            margin: 0 auto 26px;
+        }
+        p{
+            font-size: 22px;
+            margin: 0 0 10px 0;
+        }
+    }
 
+    .container_sns{
+        margin: 0 0 120px 0;
+        .wrapper_sns{
+            .box_sns{
+                h3{
+                }
+                ul{
+                    width: 370px;
+                    li > img{
+                        max-width: 44px;
+                    }
+                }
+            }
+        }
+    }
 }

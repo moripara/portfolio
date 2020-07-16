@@ -1,31 +1,44 @@
 
 .container_title{
-    background: linear-gradient(25deg, rgba(60, 77, 44, 0.4), rgba(169, 217, 124, 0.4)), url(https://polm.work/portfolio/images/plans-1867745_1920.jpg);
+    background: linear-gradient(25deg, rgba(0, 0, 0, 0.64), rgba(55, 105, 0, 0.4)), url(https://polm.work/portfolio/images/plans-1867745_1920.jpg);
     height: calc(100vh - 98px);
     background-size: cover;
     background-position: center;
     position: relative;
-    margin: 0 0 18% 0;
+    margin: 0 0 26% 0;
     h1{
         position: absolute;
         top: 70%;
         left: 4%;
-        font-size: 9vw;
+        font-size: 2.5rem;
         color: #FFF;
+    }
+    img{
+        max-width: 120px;
+        margin: 0 auto;
+        padding: 20vh 0 0 0;
+    }
+}
+
+.wrapper_works{
+    ul{
+        li:nth-child(n+5){
+            display: none;
+        }
     }
 }
 
 .btn_more{
     display: block;
-    width: 50%;
+    width: 36%;
     text-align: center;
-    background: #8BB366;
+    background: #FFFFFF;
     margin: 0 auto;
-    padding: 2% 0;
-    border-radius: 5px;
-    color: #FFF;
+    padding: 1% 0;
+    border: 1px solid;
+    color: #333333;
     letter-spacing: 2px;
-    font-size: 3.8vw;
+    font-size: 1.4rem;
 }
 
 .container_profile{
@@ -33,7 +46,7 @@
     .wrapper_profile{
         padding: 14% 0 16% 0;
         .box_profile{
-            width: 76%;
+            width: 70%;
             margin: 0 auto;
             img{
                 width: 40%;
@@ -42,17 +55,17 @@
             }
             dl{
                 margin: 0 0 10% 0;
-                font-size: 4vw;
+                font-size: 1.6rem;
                 dt{
                     text-align: center;
                     padding: 0 0 16% 0;
                     span{
-                        font-size: 4.6vw;
+                        font-size: 1.6rem;
                     }
                 }
                 dd{
                     padding: 0 0 8% 0;
-                    line-height: 1.4;
+                    line-height: 1.8;
                 }
             }
         }
@@ -65,12 +78,18 @@
     background: linear-gradient(25deg, rgba(38, 45, 30, 0.64), rgba(68, 105, 34, 0.55)), url(https://polm.work/portfolio/images/plans-1867745_1920.jpg);
     background-size: cover;
     background-position: center;
+    height: 550px;
+    margin: 0 0 16% 0;
     h1{
-        font-size: 5vw;
+        font-size: 2.8rem;
         text-align: center;
         position: relative;
-        top: 55%;
+        top: 350px;
         left: unset;
+        }
+    img{
+        width: 120px;
+        padding: 20px 0 0 0;
         }
     }
 
@@ -79,6 +98,9 @@
             flex-wrap: wrap;
             width: 76%;
             flex-direction: unset;
+            li:nth-child(n+5){
+                display: block;
+            }
             li{
                 margin: 0 auto 16%;
                 width: 44%;
@@ -88,7 +110,7 @@
                     width: 100%;
                 }
                 dl{
-                    font-size: 2.0rem;
+                    font-size: 1.6rem;
                     dt{
                     }
                 }
@@ -96,19 +118,32 @@
         }
     }
 
+    .btn_more{
+        width: 30%;
+        padding: 1% 0;
+        font-size: 1.6rem;
+    }
+
     .container_profile{
         .wrapper_profile{
             .box_profile{
                 width: 60%;
                 img{
+                    width: 100%;
+                    margin: 0 auto 6%;
+                    max-width: 210px;
                 }
                 dl{
                     font-size: 2rem;
                     dt{
+                        font-size: 1.6rem;
                         span{
+                            font-size: 2rem;
                         }
                     }
                     dd{
+                        line-height: 1.8;
+                        font-size: 1.6rem;
                     }
                 }
             }
@@ -119,12 +154,15 @@
 }
 
 
-
 @media (min-width: 1024px) {
     .container_title{
         margin: 0 0 150px 0;
+        height: 530px;
         h1{
-            font-size: 40px;
+            font-size: 28px;
+        }
+        .rogo_sp{
+            padding: 90px 0 0 0;
         }
     }
 
@@ -134,10 +172,55 @@
             width: 100%;
             max-width: 980px;
             padding: 0 0 20px 0;
+            li:nth-child(n+5){
+                display: block;
+            }
+
             li{
                 width: calc(100% / 3);
                 max-width: 250px;
                 margin: 0 auto 60px;
+                a{
+                    @mixin hideTapHighlightColor() {
+                        //Prevent highlight colour when element is tapped
+                        -webkit-tap-highlight-color: rgba(0,0,0,0);
+                    }
+
+                    @mixin hardwareAccel() {
+                        //Improve performance on mobile/tablet devices
+                        transform: translateZ(0);
+                    }
+
+                    @mixin improveAntiAlias() {
+                        //Improve aliasing on mobile/tablet devices
+                      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    }
+
+                    $defaultDuration: .3s;
+                    $primaryColour: #ececec;
+                    $secondaryColour: #666;
+                    $shadowColour: rgba(0, 0, 0, 0.899);
+
+                    display: inline-block;
+                    $borderWidth: 2px;
+
+                    transition-duration: $defaultDuration;
+                    transition-property: box-shadow;
+
+                    @include hideTapHighlightColor();
+                    @include hardwareAccel();
+
+                    // box-shadow:
+                    // inset 0 0 0 $borderWidth $primaryColour,0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
+
+                    &:hover {
+                        box-shadow:
+                        inset 0 0 0 $borderWidth $secondaryColour,0 0 1px rgba(0, 0, 0, 0); /* Hack to improve aliasing on mobile/tablet devices */
+                    }
+
+                    margin: 0 0 10px 0;
+
+                }
                 img{
                 }
                 dl{
@@ -153,6 +236,12 @@
         width: 300px;
         font-size: 16px;
         padding: 12px 0;
+        transition: 0.3s;
+    }
+    .btn_more:hover{
+        background-color: #333333;
+        color: #ffffff;
+        transition: 0.3s;
     }
 
     .container_profile{
@@ -167,7 +256,7 @@
                 margin: 0 auto;
                 img{
                     width: 100%;
-                    max-width: 300px;
+                    max-width: 320px;
                     margin: unset;
                     object-fit: contain;
                 }

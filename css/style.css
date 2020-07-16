@@ -1,31 +1,41 @@
 .container_title {
-  background: linear-gradient(25deg, rgba(60, 77, 44, 0.4), rgba(169, 217, 124, 0.4)), url(https://polm.work/portfolio/images/plans-1867745_1920.jpg);
+  background: linear-gradient(25deg, rgba(0, 0, 0, 0.64), rgba(55, 105, 0, 0.4)), url(https://polm.work/portfolio/images/plans-1867745_1920.jpg);
   height: calc(100vh - 98px);
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: 0 0 18% 0;
+  margin: 0 0 26% 0;
 }
 
 .container_title h1 {
   position: absolute;
   top: 70%;
   left: 4%;
-  font-size: 9vw;
+  font-size: 2.5rem;
   color: #FFF;
+}
+
+.container_title img {
+  max-width: 120px;
+  margin: 0 auto;
+  padding: 20vh 0 0 0;
+}
+
+.wrapper_works ul li:nth-child(n+5) {
+  display: none;
 }
 
 .btn_more {
   display: block;
-  width: 50%;
+  width: 36%;
   text-align: center;
-  background: #8BB366;
+  background: #FFFFFF;
   margin: 0 auto;
-  padding: 2% 0;
-  border-radius: 5px;
-  color: #FFF;
+  padding: 1% 0;
+  border: 1px solid;
+  color: #333333;
   letter-spacing: 2px;
-  font-size: 3.8vw;
+  font-size: 1.4rem;
 }
 
 .container_profile {
@@ -37,7 +47,7 @@
 }
 
 .container_profile .wrapper_profile .box_profile {
-  width: 76%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -49,7 +59,7 @@
 
 .container_profile .wrapper_profile .box_profile dl {
   margin: 0 0 10% 0;
-  font-size: 4vw;
+  font-size: 1.6rem;
 }
 
 .container_profile .wrapper_profile .box_profile dl dt {
@@ -58,12 +68,12 @@
 }
 
 .container_profile .wrapper_profile .box_profile dl dt span {
-  font-size: 4.6vw;
+  font-size: 1.6rem;
 }
 
 .container_profile .wrapper_profile .box_profile dl dd {
   padding: 0 0 8% 0;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 @media (min-width: 768px) {
@@ -71,13 +81,19 @@
     background: linear-gradient(25deg, rgba(38, 45, 30, 0.64), rgba(68, 105, 34, 0.55)), url(https://polm.work/portfolio/images/plans-1867745_1920.jpg);
     background-size: cover;
     background-position: center;
+    height: 550px;
+    margin: 0 0 16% 0;
   }
   .container_title h1 {
-    font-size: 5vw;
+    font-size: 2.8rem;
     text-align: center;
     position: relative;
-    top: 55%;
+    top: 350px;
     left: unset;
+  }
+  .container_title img {
+    width: 120px;
+    padding: 20px 0 0 0;
   }
   .wrapper_works ul {
     -ms-flex-wrap: wrap;
@@ -87,6 +103,9 @@
     -webkit-box-direction: unset;
         -ms-flex-direction: unset;
             flex-direction: unset;
+  }
+  .wrapper_works ul li:nth-child(n+5) {
+    display: block;
   }
   .wrapper_works ul li {
     margin: 0 auto 16%;
@@ -98,22 +117,46 @@
     width: 100%;
   }
   .wrapper_works ul li dl {
-    font-size: 2.0rem;
+    font-size: 1.6rem;
+  }
+  .btn_more {
+    width: 30%;
+    padding: 1% 0;
+    font-size: 1.6rem;
   }
   .container_profile .wrapper_profile .box_profile {
     width: 60%;
   }
+  .container_profile .wrapper_profile .box_profile img {
+    width: 100%;
+    margin: 0 auto 6%;
+    max-width: 210px;
+  }
   .container_profile .wrapper_profile .box_profile dl {
     font-size: 2rem;
+  }
+  .container_profile .wrapper_profile .box_profile dl dt {
+    font-size: 1.6rem;
+  }
+  .container_profile .wrapper_profile .box_profile dl dt span {
+    font-size: 2rem;
+  }
+  .container_profile .wrapper_profile .box_profile dl dd {
+    line-height: 1.8;
+    font-size: 1.6rem;
   }
 }
 
 @media (min-width: 1024px) {
   .container_title {
     margin: 0 0 150px 0;
+    height: 530px;
   }
   .container_title h1 {
-    font-size: 40px;
+    font-size: 28px;
+  }
+  .container_title .rogo_sp {
+    padding: 90px 0 0 0;
   }
   .wrapper_works {
     padding: 0 0 140px 0;
@@ -123,10 +166,31 @@
     max-width: 980px;
     padding: 0 0 20px 0;
   }
+  .wrapper_works ul li:nth-child(n+5) {
+    display: block;
+  }
   .wrapper_works ul li {
     width: calc(100% / 3);
     max-width: 250px;
     margin: 0 auto 60px;
+  }
+  .wrapper_works ul li a {
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-box-shadow;
+    transition-property: -webkit-box-shadow;
+    transition-property: box-shadow;
+    transition-property: box-shadow, -webkit-box-shadow;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    margin: 0 0 10px 0;
+  }
+  .wrapper_works ul li a:hover {
+    -webkit-box-shadow: inset 0 0 0 2px #666, 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 0 2px #666, 0 0 1px rgba(0, 0, 0, 0);
+    /* Hack to improve aliasing on mobile/tablet devices */
   }
   .wrapper_works ul li dl {
     font-size: 14px;
@@ -135,6 +199,14 @@
     width: 300px;
     font-size: 16px;
     padding: 12px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .btn_more:hover {
+    background-color: #333333;
+    color: #ffffff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .container_profile .wrapper_profile {
     padding: 140px 0 120px 0;
@@ -155,7 +227,7 @@
   }
   .container_profile .wrapper_profile .box_profile img {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     margin: unset;
     -o-object-fit: contain;
        object-fit: contain;

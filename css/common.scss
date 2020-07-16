@@ -5,7 +5,7 @@ html{
 
 body{
     line-height: 1.2;
-    font-family: -apple-system,'Lato', sans-serif, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+    font-family: europa,"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 
 .pc{
@@ -21,7 +21,7 @@ header{
     position: fixed;
     z-index: 1000;
     width: 100%;
-    height: 56px;
+    height: auto;
     bottom: 0;
     .gnav{
         width: 94%;
@@ -31,26 +31,40 @@ header{
 
 .navimenu{
     display: flex;
-    padding: 3% 0 0 0;
+    padding: 2% 0 2% 0;
         li{
             color: #FFF;
             text-align: center;
             width: 25%;
-            font-size: 3vw;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
             a{
                 color: #FFF;
                 img{
                     margin: 0 auto 4%;
+                    width: 30%;
+                    max-width: 30px;
                 }
             }
         }
     }
 
+.under_page_rogos{
+    width: 100%;
+    background: #333333;
+    img{
+        width: 50%;
+        margin: 0 auto;
+        padding: 4% 0 4% 0;;
+    }
+}
+
 h2{
     text-align: center;
-    font-size: 7.4vw;
+    font-size: 3rem;
     margin: 0 0 10% 0;
-    color: #3C4D2C;
+    color: #333333;
+    letter-spacing: 4px;
 }
 
 .wrapper_works{
@@ -58,18 +72,19 @@ h2{
     ul{
         display: flex;
         flex-direction: column;
-        width: 74%;
+        width: 70%;
         margin: 0 auto;
         li{
-            margin: 0 0 16% 0;
+            margin: 0 auto 16%;
+            width: 80%;
             a{
                 img{
-                    margin: 0 0 6% 0;
-                    width: 100%;
+                    margin: 0 auto 7%;
+                    width: 70%;
                 }
             }
             dl{
-                font-size: 4.2vw;
+                font-size: 1.6rem;
                 dt{
                     margin: 0 0 3% 0;
                 }
@@ -87,6 +102,66 @@ footer{
 }
 
 @media (min-width: 768px) {
+
+
+    header{
+        height: auto;
+    }
+
+    .navimenu{
+        padding: 10px 0 10px 0;
+            li{
+                font-size: 1.2rem;
+                a{
+                    img{
+                        margin: 0 auto 2%;
+                        max-width: 30px;
+                    }
+                }
+            }
+        }
+
+    .under_page_rogos{
+        img{
+            width: 30%;
+            padding: 3% 0 3% 0;
+        }
+    }
+
+    h2{
+        font-size: 3.8vw;
+        margin: 0 0 10% 0;
+    }
+
+    .wrapper_works{
+        ul{
+            width: 80%;
+            li{
+                width: 40%;
+                a{
+                    img{
+                        width: 100%;
+                    }
+                }
+                dl{
+                    dt{
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        height: 26vh;
+        font-size: 1.8rem;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
     .pc{
         display: block;
     }
@@ -96,45 +171,34 @@ footer{
     }
 
     header{
-        height: 100px;
-    }
-
-    .navimenu{
-            li{
-                font-size: 2.6vw;
-                a{
-                    img{
-                    }
-                }
-            }
-        }
-
-    h2{
-        font-size: 5.6vw;
-        margin: 0 0 10% 0;
-    }
-
-}
-
-
-
-@media (min-width: 1024px) {
-    header{
-        height: 60px;
+        height: 50px;
         top: 0;
         bottom: unset;
         .gnav{
-            width: 60%;
+            width: 100%;
+            max-width: 980px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0 0 0;
+            img{
+                display: block;
+                width: 20%;
+                object-fit: contain;
+            }
         }
     }
 
     .navimenu{
+        padding: 0 0 0 0;
+        width: 48%;
             li{
                 font-size: 1.4rem;
                 a{
                     img{
                         display: none;
                     }
+
                 }
             }
         }
@@ -142,6 +206,19 @@ footer{
     h2{
         font-size: 34px;
         margin: 0 0 60px 0;
+    }
+
+    .wrapper_works{
+        ul{
+            li{
+                a{
+                    img{
+                        padding: 3%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
     }
 
     footer{
