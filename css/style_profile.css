@@ -186,6 +186,9 @@
     font-size: 2rem;
     padding: 0 0 2% 0;
   }
+  .container_skil .wrapper_skil h2 {
+    font-size: 3.8vw;
+  }
   .container_skil .wrapper_skil .box_skil ul li {
     margin: 0 0 10% 0;
   }
